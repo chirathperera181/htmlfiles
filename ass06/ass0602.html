@@ -28,6 +28,15 @@
            document.getElementById("text-to-change").innerHTML="paragrph has been changed"
         }
     </script>
+    <hr>
+    <h2>Current date and time</h2>
+    <button type="button" onclick="showdate()">show Date</button>
+    <p id="date-display"></p>
+    <script>
+        function showdate() {
+            document.getElementById("date-display").innerHTML = Date();
+        }
+    </script>
 </body>
 
 </html>
