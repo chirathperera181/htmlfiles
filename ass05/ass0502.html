@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            margin-top: 10px;
+        }
+
+        body {
+            padding: 10px;
+        }
+
+        input {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Fill this form</h1>
+    <form>
+        <fieldset style="border: 4px solid #ccc;">
+            <label>User id: </label>
+            <input type="text" name="userid" size="15" required><br>
+            <label>Password: </label>
+            <input type="password" name="password" size="15"><br>
+            <label>Email: </label>
+            <input type="email" name="email"><br>
+            <label>Date of Birth</label>
+            <input type="date" name="dob" min="1999-01-01"><br>
+            <label>Age: </label>
+            <input type="number" size="2" min="18" max="22"><br>
+            <label>Profile picture: </label>
+            <input type="file" accept="photo"><br>
+
+        </fieldset>
+        <div class="botton" style="text-align: center; margin-top: 10px;">
+            <input type="submit" name="submit">
+            <input type="reset" name="reset">
+        </div>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Personal Data</legend>
+            <label>University: </label>
+            <input type="Text" name="University" value="University Of Ruhuna" readonly><br>
+            <label>First name: </label>
+            <input type="text" size="15" maxlength="10" name="name"><br>
+            <label>Contact No: </label>
+            <input type="tel" name="telephone" maxlength="10"><br>
+            <label>Address: </label>
+            <textarea style="margin-top: 10px;" name="address" rows="4" cols="30"></textarea><br>
+            <label>Gender: </label>
+            <input type="radio" value="male" name="gender" checked> Male
+            <input type="radio" value="female" name="gender"> Female<br>
+            <label>Faculty: </label>
+            <select style="margin-top: 10px;">
+                <option value="Science" selected>Science</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Art">Art</option>
+                <option value="Managment">Managment</option>
+            </select><br>
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <input type="checkbox" name="basic" value="basic" checked> Basic Degree
+            <input type="checkbox" name="basic" value="Postgraduate"> Postgraduate
+            <input type="checkbox" name="basic" value="Master"> Master Degree
+            <input type="checkbox" name="basic" value="Professional"> Professional Qualification
+        </fieldset>
+        <div>
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>  

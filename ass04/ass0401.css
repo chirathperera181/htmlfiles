@@ -1,0 +1,39 @@
+h1,
+h2 {
+    color: rgb(11, 132, 132);
+}
+
+body {
+    background-color: #ccc;
+}
+
+footer {
+    text-align: center;
+    color: rgb(5, 63, 44);
+    padding: 20px;
+    clear: both;
+}
+
+nav {
+    background-color: #333;
+    position: fixed;
+    top: 80;
+    width: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li{
+    float: left;
+}
+nav li a{
+    display: block;
+    color: #ccc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

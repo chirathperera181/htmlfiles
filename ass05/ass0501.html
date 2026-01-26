@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            text-align: center;color: blanchedalmond;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: purple;
+            padding: 20px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        fieldset {
+            border: 7px solid #ccc;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: maroon;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Student Registration Form
+    </header>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input id="fullname" name="fullname" size="15" type="text" maxlength="30"> <br>
+            <label for="studentno">Student No:</label>
+            <input id="studentno" name="studentno" type="text" size="15" maxlength="10"><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="Email" size="30"><br>
+            <label for="phoneno">Phone No: </label>
+            <input type="tel" id="phoneno" name="phoneno" size="15" maxlength="30"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="Address">Address: </label>
+            <textarea name="Address" id="Address"></textarea><br>
+            <label for="YOS">Year of Study:</label>
+            <input type="radio" id="YOS" name="YOS" value="1st" checked>1st
+            <input type="radio" id="YOS" name="YOS" value="2st">2nd
+            <input type="radio" id="YOS" name="YOS" value="3st">3rd<br>
+            <label for="faculty">Your faculty: </label>
+            <select name="faculty" id="faculty">
+                <option selected value="Science">Science</option>
+                <option value="Art">Art</option>
+                <option value="Management">Mng</option>
+                <option value="Engineering">Eng</option>
+            </select><br>
+            <label for="english">Passed Exam in English: </label>
+            <input type="checkbox" id="english" name="enlish" value="Level1" checked>Level 1
+            <input type="checkbox" id="english" name="enlish" value="Level2">Level 2
+            <input type="checkbox" id="english" name="enlish" value="Level3">Level 3<br>
+        </fieldset>
+        <div class="buttons">
+            <input type="submit" id="english" name="submit" value="submit">
+            <input type="reset" id="english" name="reset" value="reset">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+fieldset{border: 2px solid black; border-radius:3% ;padding: 20px;width: 400px;}
+h3{font-weight: bold;}
+body{padding: 20px;}
+form{padding: 20px; display: flex;}
+label{display: block;}
+input {margin-top: 10px; color: aliceblue;background-color: aquamarine;}
+input[type="submit"]{background-color: green;}
+input[type="reset"]{background-color: green;}

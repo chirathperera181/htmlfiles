@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write("Hello, World");
+        var a, b, sum;
+        a = 880;
+        b = 120;
+        sum = a + b;
+        document.write("the sum of " + a + " and " + b + " is:" + sum);
+    </script>
+    <hr>
+    <h2>button Alert</h2>
+    <button type="button" onclick='alert("Button clicked")'>Click me</button>
+    <hr>
+    <h2>Change paragraph</h2>
+    <p id="text-to-change">orginal Text</p>
+    <button type="button" onclick="changeText()">Change text</button>
+    <script>
+        function changeText() {
+           document.getElementById("text-to-change").innerHTML="paragrph has been changed"
+        }
+    </script>
+</body>
+
+</html>
