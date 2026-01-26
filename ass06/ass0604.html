@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script>
+        function disp_alert() {
+            alert("Hello !" + '\n\n' + "This is a test");
+        }
+        function disp_prompt() {
+            var name = prompt("Please enter your name", "No Name");
+            {
+                document.write("Hello " + name + "! How are you today?");
+            }
+        }
+        function window_alert() {
+           var naim = prompt("Please enter your name");
+           { window.alert("Hellow"+ " " + naim );
+           }
+        }
+    </script>
+</head>
+
+<body>
+    <hr>
+    <input type="button" onclick="disp_prompt()" value="Click Here" />
+    <hr>
+    <input type="button" onclick="disp_alert()" value="Test alert" />
+    <hr>
+    <input type="button" onclick="window_alert()" value="give me your name"/>
+</body>
