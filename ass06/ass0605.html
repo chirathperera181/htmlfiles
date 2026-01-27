@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function first() {
+            var x = Number(prompt("Plz Enter the first value"));
+            var y = Number(prompt("Plz Enter the second value"));
+            var sum = x + y;
+            {
+                document.getElementById("result").innerHTML = "sammation of thoese numbers is :" + sum;
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <input type="button" onclick="first()" value="to Enter first value"><br>
+    <p id="result"></p>
 </body>
+
 </html>
