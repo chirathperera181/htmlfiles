@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function register(){
+            var name = document.getElementById("name").value
+            var stream = document.getElementById("stream").value
+            var tel = document.getElementById("tel").value
+            if (name === "" ||tel === "" ||stream === ""){
+                alert("All feild are requaired");
+                return;
+            }
+            var code = tel.substring(0, 3);
+            var smsno =  "";
+            if (code === "070"|| code === "071"){
+                smsno="1111";
+            }
+            else if(code === "072"|| code === "078"){
+                smsno = "2222";
+            }
+            else if(code === "074"|| code === "076"|| code ==="078"){
+                smsno = "3333";
+            }
+            else if(code === "075"){
+                smsno = "4444";
+            }
+            else{
+                smsno = "Invalid code";
+            }
+         document.getElementById("demo").innerHTML= "Dear Student " + name + "<br>" + "Your Stream " + stream + "<br>" + "Please follow the steps to subscribe Future4You online system "+ "<br>" + "Type Reg(space) Future4You and SMS to " + smsno;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h1>Institute Of Future4you</h1>
+            <p>Register our Institute by filling the form </p>
+            <label>Name: </label>
+            <input id="name"  type="text" required size="15"><br>
+            <label>Mobile No:</label>
+            <input id="tel" type="tel" size="10" required><br>
+            <labels>Stream</label>
+            <select id="stream">
+                <option selected>Science</option>
+                <option>Commerce</option>
+                <option>Technology</option>
+                <option>Arts</option>
+            </select>
+            <div>
+            <input type="button" onclick="register()" value="Register" >
+            <input type="button" onclick="cancel()" value="cancel" >
+            </div>
+
+        </fieldset>
+    </form>
+    <p id="demo"></p>
+</body>
+</html>
