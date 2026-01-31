@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        function names(){
-            let names = prompt("Plz enter your name");
-             document.getElementById("demo").innerHTML= " Welcome " + names;
-        
-        }
-    </script>
+    <title>Welcome Message</title>
 </head>
 <body>
-    <input type="button" onclick="names()" value="Click to add the name">
-    <p id="demo"></p>
+
+<input type="text" id="name" placeholder="Enter your name">
+<button onclick="welcome()">Click</button>
+
+<p id="output"></p>
+
+<script>
+function welcome() {
+    var name = document.getElementById("name").value;
+    document.getElementById("output").innerHTML = "Welcome, " + name;
+}
+</script>
+
 </body>
 </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var x = Number(document.getElementById("fst").value);
+            var y = Number(document.getElementById("second").value);
+            document.getElementById("demo").innerHTML=x+y;
+        }
+    </script>
+</head>
+<body>
+    <label for="fst">Enter first number</label>
+    <input type="number" id="fst" size="10"><br>
+    <label for="second">Enter second number</label>
+    <input type="number" id="second" size="10"><br>
+    <input type="button" onclick="add()" value="add"><br>
+    <p>Answer: <span id="demo"></span></p>
+
+</body>
+</html>
