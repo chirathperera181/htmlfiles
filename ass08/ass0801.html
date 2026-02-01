@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            margin-top: 10px;
+        }
+
+    </style>
+    <script>
+        function returndisplaydata(){
+            var id = document.getElementById("id").value;
+            var pw = document.getElementById("pw").value;
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var sex = document.getElementById("sex").value;
+            alert("Hi "+name+"your user id is:  "+id+"and email is: "+email);
+        }
+    </script>
+</head>
+<body>
+    <form name="registration" onsubmit="returndisplaydata();">
+        <fieldset>
+            <legend>Fill the following form and registered as an internal student of our Institute</legend>
+            <label>User id: </label>
+            <input id="id" type="number" size="10"><br>
+            <label>Password: </label>
+            <input id="pw" type="password" ><br>
+            <label>Name: </label>
+            <input id="name" type="text" size="15"><br>
+            <label>Email: </label>
+            <input id="email"  type="email"><br>
+            <label for="sex">Gender: </label>
+            <input id="sex" type="radio" name="sex">Male
+            <input id="sex" type="radio" name="sex">Female<br>
+            <input id="sex" type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
