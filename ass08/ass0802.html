@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Validation</title>
+    <script>
+        function checkPassword() {
+            let pw1 = document.getElementById("pass1").value;
+            let pw2 = document.getElementById("pass2").value;
+
+            if (pw1 !== pw2) {
+                alert("Passwords do not match!");
+                return false;
+            }
+
+            alert("Passwords match!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+<form onsubmit="return checkPassword();">
+    Password:
+    <input type="password" id="pass1"><br><br>
+
+    Confirm Password:
+    <input type="password" id="pass2"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
