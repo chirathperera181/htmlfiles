@@ -1,0 +1,27 @@
+body{
+    padding: 20px;
+}
+form{
+    display: flex;
+    gap: 40px;
+}
+.salary{
+    display: flex;
+    flex: 3;
+}
+#button{
+    background-color: rgb(31, 162, 31);
+    border-radius: 10%;
+    border: 2px solid rgb(31, 162, 31);
+    color: aliceblue;
+}
+.button{
+    padding: 20px;
+}
+input{
+    margin-top: 10px;
+}
+.contribution{
+    flex: 2;
+    padding: 20px;
+}

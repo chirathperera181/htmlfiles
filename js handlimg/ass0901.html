@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function salarycalculate() {
+            var basicsalary = Number(document.getElementById("bs").value);
+            var allowance = Number(document.getElementById("aw").value);
+            var salaryadvance = Number(document.getElementById("sa").value);
+            var staffloan = Number(document.getElementById("sl").value);
+            var emrepf = basicsalary * 12 / 100;
+            var emretf = basicsalary * 3 / 100;
+            var emeepf = basicsalary * 8 / 100;
+            document.getElementById("epfemrc").innerHTML = emrepf;
+            document.getElementById("emec").innerHTML = emeepf;
+            document.getElementById("etf").innerHTML = emretf;
+            var netsal = (basicsalary + allowance) - (salaryadvance + staffloan - emeepf);
+            document.getElementById("ns").innerHTML = netsal;
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="ass0901.css">
+</head>
+
+<body>
+    <h2>Salary Calculator</h2>
+    <form>
+        <div class="salary">
+            <div>
+                Basic Salary:
+                <input type="number" size="8" id="bs"><br>
+                Salary Advance:
+                <input type="number" size="8" id="sa"><br>
+                <div class="button">
+                    <input id="button" type="button" value="Calculate" onclick="salarycalculate()">
+                </div>
+            </div>
+            <div>
+                Allowance:
+                <input type="number" size="8" id="aw"><br>
+                Staff Loan:
+                <input type="number" size="8" id="sl"><br>
+            </div>
+
+        </div>
+        <div class="Contribution">
+            Net salary:
+            <p id="ns"></p>
+            Employer Contribution:
+            EPF(12%)
+            <p id="epfemrc"></p>
+
+            Employee Contribution:
+            <p id="emec"></p>
+            Employer Contribution:
+            ETF(3%)
+            <p id="etf"></p>
+        </div>
+    </form>
+</body>
+
+</html>
