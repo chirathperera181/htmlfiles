@@ -27,36 +27,56 @@
 <body>
     <h2>Salary Calculator</h2>
     <form>
-        <div class="salary">
-            <div>
-                Basic Salary:
-                <input type="number" size="8" id="bs"><br>
-                Salary Advance:
-                <input type="number" size="8" id="sa"><br>
-                <div class="button">
-                    <input id="button" type="button" value="Calculate" onclick="salarycalculate()">
+        <div class="container">
+            <div class="inputsection">
+                <div class="form-group">
+                    Basic Salary:
+                    <input type="number" size="8" id="bs" placeholder="100,000"><br>
+                </div>
+                <div class="form-group">
+                    Salary Advance:
+                    <input type="number" size="8" id="sa"><br>
+                </div>
+
+
+                <div class="form-group">
+                    Allowance:
+                    <input type="number" size="8" id="aw"><br>
+                </div>
+                <div class="form-group">
+                    Staff Loan:
+                    <input type="number" size="8" id="sl"><br>
+                </div>
+                <input class="button" id="button" type="button" value="Calculate" onclick="salarycalculate()">
+
+            </div>
+            <div class="resultsection">
+                <div class="title">
+                    <h4>Net salary:</h4>
+                </div>
+                <div class="value">
+                    <p>Rs.<span id="ns"></span></p>
+                </div>
+
+                <div class="contribution">
+                    <h4>Employee Contribution:</h4>
+                    <div class="row">
+                        <span>EPF (8%)</span>
+                        <span id="emec">Rs. 0.00</span>
+                    </div>
+                </div>
+                <div class="contribution">
+                    <h4>Employer Contribution: </h4>
+                    <Div class="row">
+                        <span>EPF(12%)</span>
+                        <span id="epfemrc">RS.0.00</span>
+                    </Div>
+                    <div class="row">
+                        <span>ETF(3%)</span>
+                        <span id="etf">Rs. 0.00</span>
+                    </div>
                 </div>
             </div>
-            <div>
-                Allowance:
-                <input type="number" size="8" id="aw"><br>
-                Staff Loan:
-                <input type="number" size="8" id="sl"><br>
-            </div>
-
-        </div>
-        <div class="Contribution">
-            Net salary:
-            <p id="ns"></p>
-            Employer Contribution:
-            EPF(12%)
-            <p id="epfemrc"></p>
-
-            Employee Contribution:
-            <p id="emec"></p>
-            Employer Contribution:
-            ETF(3%)
-            <p id="etf"></p>
         </div>
     </form>
 </body>
